@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+
+<script>
+// import AdviceButton from "@/components/AdviceButton.vue";
+
+export default {
+  components: {
+    // AdviceButton,
+  },
+};
+</script>
+
+
 
 <style>
 #app {
@@ -21,9 +30,10 @@ nav {
   padding: 30px;
 }
 
-nav a {
+a {
   font-weight: bold;
   color: #2c3e50;
+  margin: 7px;
 }
 
 nav a.router-link-exact-active {

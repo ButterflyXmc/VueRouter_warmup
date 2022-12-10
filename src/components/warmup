@@ -1,0 +1,21 @@
+
+1. Create a vue project named api_advice, connect to GitHub
+  1.1. Ensure you select Router during setup
+  1.2. Ensure you install axios and vue-cookies after setup
+2. Configure your debugger
+3. Clean your project so you have a clean routing file, no views, no components and a clean App.vue file
+  3.1. Use the slides as a guide here so you know what to remove and what not to
+4. Create a new view named HomePage, go through the workflow to declare this view with the path of "/"
+  4.1. No need for meta data on this one, just a simple view is fine
+5. Create a new view named AdvicePage, go through the workflow to declare this view with the path of "/advice"
+  5.1. No need for meta data on this one, just a simple view is fine
+6. Create a component called AdivceButton, use it in the HomePage
+  6.1. When it is clicked, make an axios request to the url `https://api.adviceslip.com/advice`
+  6.2. On success: 
+    6.2.1 Store the advice in a cookie called advice
+    6.2.2. Send the user to the AdvicePage
+  6.3. On failure, show the user a simple error message
+7. On the AdvicePage: 
+  7.1. Give the user a link to go back to the HomePage
+  7.2. Read from the cookies and show the user the advice retrieved from the API
+  7.3. If there is no cookie, show the user a typical error message
