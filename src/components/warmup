@@ -1,3 +1,11 @@
+# ALL WE DID IN THIS WARMUP IS
+- made two Viewpages, connected them to the router file
+- then made a button component, that called the api and set the cookies
+- then we added the button component to the advice page
+  where we get the cookie to display the api content on the page when clicked
+
+
+
 
 1. Create a vue project named api_advice, connect to GitHub
   1.1. Ensure you select Router during setup
@@ -19,3 +27,4 @@
   7.1. Give the user a link to go back to the HomePage
   7.2. Read from the cookies and show the user the advice retrieved from the API
   7.3. If there is no cookie, show the user a typical error message
+
